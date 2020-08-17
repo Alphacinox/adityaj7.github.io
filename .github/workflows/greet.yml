@@ -1,9 +1,25 @@
-- name: First interaction - pwsh edition
-  uses: TylerLeonhardt/first-interaction-pwsh@v0.1.0
-  with:
+
+  uses:   with:
     # Token for the repository. Can be passed in using {{ secrets.GITHUB_TOKEN }}
     repo-token: 
     # Comment to post on an individual's first issue
     issue-message: # optional
     # Comment to post on an individual's first pull request
     pr-message: # optional
+
+
+
+name: Greet
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: TylerLeonhardt/first-interaction-pwsh@v0.1.0
+
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hi thanks fo creating an issue I hope you have read the contribution guidelines'
+        pr-message: 'Hi thanks for submitting the PR I hope you have read the clean code guidelines.'
