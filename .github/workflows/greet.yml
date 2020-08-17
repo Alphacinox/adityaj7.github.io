@@ -10,5 +10,5 @@ jobs:
 
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Hi ${{github.actor}} thanks fo creating an issue I hope you have read the contribution guidelines'
+        issue-message: 'Hi @${{github.actor}} thanks fo creating an issue I hope you have read the contribution guidelines'
         pr-message: 'Hi thanks for submitting the PR I hope you have read the clean code guidelines.'
