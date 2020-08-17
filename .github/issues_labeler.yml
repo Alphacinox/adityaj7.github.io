@@ -1,7 +1,7 @@
 Bash:
-  - "(Bash|bash)"
+  - "(Bash|bash|BASH)"
 Golang:
-  - "(Go|GO|Golang)"
+  - "(Go|GO|Golang|GOLANG)"
 JavaScript:
   - "(JavaScript|JAVASCRIPT|Javascript|javascript|JS|js)"
 Python:
@@ -11,9 +11,10 @@ enhancement:
 CH20:
   - "(CH20)"
 Easy:
-  - "(Easy|easy)"  
+  - "(Easy|easy|EASY)"  
 Medium:
-  - "(Medium|medium)"
+  - "(Medium|medium|MEDIUM)"
 Hard:
-  - "(Hard|hard)"
-  
+  - "(Hard|hard|HARD)"
+Up-for-grab:
+  - "(up for grab)"
